@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5"
+    />
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              sm: '640px',
+              md: '768px',
+              lg: '1024px',
+              xl: '1440px',
+            },
+            fontFamily: {
+              spaceMono: 'Space Mono',
+              inconsolata: 'Inconsolata',
+              montserrat: 'Montserrat',
+            },
+            colors: {
+              primaryGray: '#333333',
+              secondaryGray: '#4f4f4f',
+              tertiartGray: '#bdbdbd',
+            },
+          },
+        },
+      };
+    </script>
+    <title>404 NOT FOUND</title>
+  </head>
+
+  <body>
+    <!-- TOPMOST CONTAINER -->
+    <div class="flex flex-col mx-auto w-[90%] sm:w-[80%]">
+      <!-- HEADER && NAV -->
+      <header class="mt-5 lg:mt-10">
+        <h1
+          class="font-inconsolata font-bold leading-6 text-[24px] text-primaryGray tracking-tighter uppercase"
+        >
+          404 not found
+        </h1>
+      </header>
+      <!-- MAIN CONTAINER -->
+      <main class="mx-auto mt-16 sm:mt-20 lg:flex justify-between items-center">
+        <!-- IMAGE CONTAINER -->
+        <div class="mx-auto w-[80%] sm:w-[90%] lg:w-[539px] lg:mr-20 lg:mx-0">
+          <img class="w-[100%] h-auto" src="Scarecrow.png" alt="scarecrow" />
+        </div>
+        <!-- TEXT CONTAINER -->
+        <div class="mt-[77px] lg:max-w-lg">
+          <h1
+            class="font-spaceMono font-bold leading-[71px] text-[48px] text-primaryGray tracking-tighter lg:text-6xl"
+          >
+            I have bad news for you
+          </h1>
+          <p
+            class="mt-7 pl-1 font-spaceMono font-normal leading-[27px] text-[18px] text-secondaryGray tracking-tighter lg:max-w-[318px]"
+          >
+            The page you are looking for might be removed or is temporarily
+            unavailable
+          </p>
+          <!-- BUTTON CONTAINER -->
+          <div class="mt-16 bg-primaryGray max-w-max">
+            <button
+              class="font-spaceMono font-bold leading-[21px] px-11 py-6 text-[14px] text-[white] tracking-tight uppercase"
+            >
+              Back to homepage
+            </button>
+          </div>
+        </div>
+      </main>
+      <!-- FOOTER -->
+      <footer class="mt-28 p-2 text-center">
+        <p
+          class="font-montserrat font-medium leading-[17px] text-[14px] text-tertiartGray"
+        >
+          created by
+          <a href="https://devchallenges.io/portfolio/vilasgannaram"
+            >vilasgannaram</a
+          >
+          - devChallenges.io
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

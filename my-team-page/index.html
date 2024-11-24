@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/devchallenges.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+          screens: {
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1440px',
+          },
+          fontFamily: {
+            ptSerif: 'PT Serif',
+            poppins: 'Poppins',
+            montserrat: 'Montserrat',
+          },
+          colors: {
+            primary: '#fafafa',
+            secondary: '#a9a9a9',
+          },
+        },
+      };
+    </script>
+    <title>My Team Page</title>
+  </head>
+
+  <body class="bg-primary">
+    <!-- PARENT CONTAINER -->
+    <div class="w-[90%] mx-auto sm:w-4/5 lg:w-[70%]">
+      <!-- HEADER -->
+      <header class="mt-14 lg:mt-16 xl:mt-20">
+        <h1
+          class="font-ptSerif font-bold text-[36px] leading-[47px] tracking-tighter"
+        >
+          The creative crew
+        </h1>
+        <div class="mt-9">
+          <h2 class="font-poppins font-semibold text-lg uppercase">
+            Who we are
+          </h2>
+          <p class="mt-3 font-poppins text-sm w-4/5">
+            We are team of creatively diverse. driven. innovative individuals
+            working in various locations from the world.
+          </p>
+        </div>
+      </header>
+
+      <!-- MAIN -->
+      <main
+        class="mt-8 grid grid-cols-2 gap-10 md:gap-12 md:mt-12 lg:gap-16 lg:grid-cols-3 xl:gap-20"
+      >
+        <!-- Bill Mahoney -->
+        <article class="flex">
+          <figure>
+            <img class="w-[100%]" src="photo1.png" alt="Bill Mahoney" />
+            <figcaption class="font-poppins font-semibold text-sm">
+              Bill Mahoney
+            </figcaption>
+          </figure>
+          <figcaption
+            class="font-ptSerif text-[10px] leading-3 uppercase writing-mode-vertical"
+          >
+            Product owner
+          </figcaption>
+        </article>
+
+        <!-- Saba Cabrera -->
+        <article class="flex pt-10 sm:pt-16 lg:pt-20">
+          <figure>
+            <img class="w-[100%]" src="photo2.png" alt="Saba Cabrera" />
+            <figcaption class="font-poppins font-semibold text-sm">
+              Saba Cabrera
+            </figcaption>
+          </figure>
+          <figcaption
+            class="font-ptSerif text-[10px] leading-3 uppercase writing-mode-vertical"
+          >
+            Art director
+          </figcaption>
+        </article>
+
+        <!-- Shae Le -->
+        <article class="flex">
+          <figure>
+            <img class="w-[100%]" src="photo3.png" alt="Shae Le" />
+            <figcaption class="font-poppins font-semibold text-sm">
+              Shae Le
+            </figcaption>
+          </figure>
+          <figcaption
+            class="font-ptSerif text-[10px] leading-3 uppercase writing-mode-vertical"
+          >
+            Tech Lead
+          </figcaption>
+        </article>
+
+        <!-- Skylah Lu -->
+        <article class="flex pt-10 sm:pt-16 lg:pt-0">
+          <figure>
+            <img class="w-[100%]" src="photo4.png" alt="Skylah Lu" />
+            <figcaption class="font-poppins font-semibold text-sm">
+              Skylah Lu
+            </figcaption>
+          </figure>
+          <figcaption
+            class="font-ptSerif text-[10px] leading-3 uppercase writing-mode-vertical"
+          >
+            UX Designer
+          </figcaption>
+        </article>
+
+        <!-- Griff Richards -->
+        <article class="flex lg:pt-20">
+          <figure>
+            <img class=""" src="photo5.png" alt="Griff Richards" />
+            <figcaption class="font-poppins font-semibold text-sm">
+              Griff Richards
+            </figcaption>
+          </figure>
+          <figcaption
+            class="font-ptSerif text-[10px] leading-3 uppercase writing-mode-vertical"
+          >
+            Developer
+          </figcaption>
+        </article>
+
+        <!-- Stan John -->
+        <article class="flex pt-10 sm:pt-16 lg:pt-0">
+          <figure>
+            <img class="w-[100%]" src="photo6.png" alt="Stan John" />
+            <figcaption class="font-poppins font-semibold text-sm">
+              Stan John
+            </figcaption>
+          </figure>
+          <figcaption
+            class="font-ptSerif text-[10px] leading-3 uppercase writing-mode-vertical"
+          >
+            DEverloper
+          </figcaption>
+        </article>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="mt-24">
+        <p
+          class="m-3 font-montserrat font-bold text-secondary text-[14px] leading-[17px] text-center"
+        >
+          created by
+          <a href="https://devchallenges.io/portfolio/vilasgannaram"
+            >vilasgannaram</a
+          >
+          - devChallenges.io
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
