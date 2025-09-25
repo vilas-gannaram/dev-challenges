@@ -1,0 +1,579 @@
+/* Utility Styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.3;
+    overflow-x: hidden;
+}
+
+a {
+    color: #ccc;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h4 {
+    color: #00ed82;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block;
+    background: #1ce783;
+    color: #333;
+    width: 100%;
+    padding: 20px 32px;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 14px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-cta:hover {
+    opacity: 0.8;
+}
+
+.btn-outline {
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+    color: #fff;
+    border-color: #ccc;
+}
+
+.btn-dark {
+    background: #000;
+    color: #fff;
+}
+
+.legal-text {
+    font-size: 10px;
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.sub-link {
+    display: block;
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+
+.text-xl {
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.sub-text {
+    max-width: 850px;
+    margin: 10px auto;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+/*  Header  */
+
+.header {
+    height: 700px;
+    background: url(../images/header.jpg) no-repeat center center / cover;
+}
+
+.header nav {
+    padding: 20px 40px;
+    z-index: 2;
+    position: relative;
+}
+
+.header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header nav img {
+    width: 60px;
+    margin-top: 5px;
+}
+
+.header nav .login-btn {
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header .logo {
+    margin: auto;
+    width: 600px;
+    margin: 20px 0;
+}
+
+.header .header-content {
+    width: 700px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.header .btn {
+    margin-top: 30px;
+}
+
+.header .header-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header-content .legal-text {
+    margin-bottom: 20px;
+}
+
+.header #signup-Link {
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 1;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.76) 15.54%,
+            rgba(0, 0, 0, 0.192) 60.23%,
+            rgba(0, 0, 0, 8e-5) 100%);
+}
+
+/*  Categories  */
+
+.categories {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 90px 40px;
+}
+
+.categories .covers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.categories .covers>div {
+    height: 450px;
+    width: 300px;
+    position: relative;
+}
+
+.categories .cover-grad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(156.82deg,
+            rgba(0, 0, 0, 0.6) 4.58%,
+            rgba(0, 0, 0, 0) 69.61%),
+        linear-gradient(24.5deg,
+            rgba(0, 0, 0, 0.2) 4.71%,
+            rgba(0, 0, 0, 0) 71.49%);
+}
+
+.categories .cover-text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+.categories .cover-1 {
+    background: url(../images/cover-1.jpg) no-repeat center center / cover;
+}
+
+.categories .cover-2 {
+    background: url(../images/cover-2.jpg) no-repeat center center / cover;
+}
+
+.categories .cover-3 {
+    background: url(../images/cover-3.jpg) no-repeat center center / cover;
+}
+
+.categories .cover-4 {
+    background: url(../images/cover-4.jpg) no-repeat center center / cover;
+}
+
+/*  Live */
+
+.live-TV {
+    width: 1000px;
+    margin: auto;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.live-TV>a {
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+/*  Selection */
+
+.selection {
+    position: relative;
+    height: 800px;
+    width: 100%;
+    background: url(../images/live-sports.jpg) no-repeat center center / cover;
+}
+
+.selection .options {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    z-index: 2;
+}
+
+.selection .selection-content {
+    position: relative;
+    top: 230px;
+    left: 200px;
+    max-width: 510px;
+}
+
+/* Selection Links */
+
+.selection .btn {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    background: none;
+    color: #ccc;
+    font-size: 12px;
+    font-weight: 700;
+    margin-right: 35px;
+}
+
+.selection .option-sports .btn {
+    width: 95px;
+}
+
+.selection .option-news .btn {
+    width: 120px;
+}
+
+.selection .option-events .btn {
+    width: 120px;
+}
+
+.selection .options .btn:hover {
+    color: rgba(204, 204, 204, 0.6);
+}
+
+.selection .options .btn:active {
+    color: #fff;
+    border-bottom: 5px solid #fff;
+    padding-bottom: 10px;
+}
+
+.selection .selection-content .legal-text a {
+    font-size: 8px;
+    color: #ccc;
+    text-decoration: underline;
+}
+
+/* Selection Content Logos */
+
+.selection-content .content-logos {
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selection-content .content-logos>div {
+    background: url(../images/network-logo-bg.png) no-repeat;
+    background-size: cover;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selection-content .content-logos img {
+    width: 40px;
+}
+
+
+/*  Footer */
+
+.footer {
+    background: #f6f7f8;
+    color: #333;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-container {
+    max-width: 90%;
+    margin: auto;
+    padding: 40px;
+}
+
+.footer-lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-lists .list-head {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-lists ul li {
+    margin-bottom: 5px;
+}
+
+.divider {
+    width: 100%;
+    height: 3px;
+    border: 1px solid #ccc;
+    margin: 30px 0;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+    margin-right: 25px;
+}
+
+
+/*  Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-box {
+    margin: 10% auto;
+    width: 400px;
+    background: #fff;
+    color: #333;
+    position: relative;
+    animation: modalopen 1s;
+}
+
+@keyframes modalopen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-body {
+    padding: 50px;
+}
+
+.modal-body h3 {
+    font-weight: bold;
+}
+
+.modal-body .btn {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.modal .close {
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal .modal-footer {
+    background: #f7f7f9;
+    color: #333;
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.modal .modal-footer a {
+    color: steelblue;
+}
+
+/*  Form  */
+
+.form-control {
+    margin: 20px 0;
+}
+
+.form-control label {
+    display: block;
+    text-transform: uppercase;
+}
+
+.form-control input {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    height: 50px;
+    padding: 5px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1100px) {
+    .categories .covers {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .header .header-content {
+        width: 90%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .header .logo {
+        width: 250px;
+    }
+
+
+    .header .header-text {
+        margin-bottom: 40px;
+    }
+
+    /*  Categories & Live TV  */
+
+    .live-TV {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .text-xl {
+        line-height: 1.3;
+        font-size: 40px;
+    }
+
+    .sub-text {
+        font-size: 20px;
+    }
+
+    .categories .covers {
+        grid-template-columns: 1fr;
+    }
+
+    /*  Live Content  */
+
+    .selection {
+        width: 100%;
+        background: url(../images/live-sports-small.jpg) no-repeat center center / cover;
+    }
+
+    .selection .options {
+        width: 90%;
+        top: 30px;
+        left: 20px;
+        flex-direction: column;
+    }
+
+    .selection .option {
+        margin-bottom: 5px;
+    }
+
+    .selection .selection-content {
+        width: 90%;
+        top: 150px;
+        left: 20px;
+    }
+
+    /*  Footer */
+
+    .footer-lists {
+        flex-direction: column;
+    }
+
+    .modal .modal-box {
+        width: 350px;
+    }
+}
