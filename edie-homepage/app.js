@@ -39,3 +39,19 @@ backEnd.addEventListener("mouseout", () => {
   backEndBtn.style.backgroundColor = "#E0E0E0";
   backEndBtn.style.color = "#828282";
 });
+
+
+
+// Get the form element using its ID
+const form = document.getElementById('my-dummy-form');
+
+// Add an event listener for the 'submit' action
+form.addEventListener('submit', function (event) {
+	// 1. PREVENT THE DEFAULT SUBMISSION (THIS STOPS THE URL PARAMETERS)
+	event.preventDefault();
+
+	// 2. OPTIONAL: ALERT THE USER TO CLARIFY IT'S A DEMO
+	alert(
+		'Thank you! This is a non-functional portfolio project and does not process any data.'
+	);
+});
