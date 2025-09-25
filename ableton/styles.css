@@ -1,0 +1,248 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a,
+a:focus,
+a:hover {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+}
+
+:root {
+	/* font-sizes */
+	--base-font-size: 14px;
+	--base-line-height: 22px;
+
+	/* colors */
+	--light-yellow: #fbffa7;
+	--bright-orange-red: #ff764d;
+	--soft-light-blue: #b1c5ff;
+	--light-lavender: #d5b3ff;
+	--light-mint-green: #b6ffc0;
+	--pure-blue: #0000ff;
+
+	--border-light-gray: #ececec;
+}
+
+body {
+	font-family: 'Didact Gothic', sans-serif;
+	font-weight: 400;
+
+	font-size: var(--base-font-size);
+	line-height: var(--base-line-height);
+}
+
+/* Primary Navigation */
+
+header .primary-navigation-container {
+	padding: 15px 3%;
+
+	display: flex;
+	align-items: center;
+	gap: 30px;
+
+	position: relative;
+	z-index: 3;
+	border-bottom: 1px solid var(--border-light-gray);
+}
+
+@media (max-width: 1024px) {
+	header .primary-navigation-container button {
+		display: flex;
+		align-items: center;
+		gap: 4px;
+	}
+
+	header .primary-navigation-container nav.menu-closed {
+		display: none;
+		transition: display 1s ease;
+	}
+
+	header .primary-navigation-container nav.menu-open {
+		position: fixed;
+		top: 50px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+
+		transition: bottom 1s ease; /* Transition effect */
+
+		background-color: var(--pure-blue);
+		z-index: 2;
+	}
+
+	header .primary-navigation-container nav.menu-open {
+		padding-left: 3%;
+	}
+
+	header .primary-navigation-container nav.menu-open ul > li > a {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	header .primary-navigation-container nav.menu-open ul > li {
+		margin-top: 0.25rem;
+	}
+
+	header .primary-navigation-container nav.menu-open ul {
+		margin-top: 1.5rem;
+	}
+}
+
+@media (min-width: 1024px) {
+	header .primary-navigation-container {
+		padding: 20px 3%;
+		gap: 50px;
+	}
+
+	header .primary-navigation-container button {
+		display: none;
+	}
+
+	header .primary-navigation-container nav {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	header .primary-navigation-container nav > ul {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+	}
+
+	header .primary-navigation-container nav > ul > li {
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 500;
+	}
+
+	header .primary-navigation-container nav > ul:first-child > li:last-child {
+		color: var(--bright-orange-red);
+	}
+
+	header .primary-navigation-container nav > ul:last-child > li:first-child {
+		color: var(--pure-blue);
+	}
+
+	header .primary-navigation-container nav > ul:last-child > li:last-child {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+/* Secondary Navigation */
+
+header > nav.secondary-navigation {
+	padding: 15px 3%;
+}
+
+header > nav.secondary-navigation > ul {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+header > nav.secondary-navigation > ul > li:first-child {
+	color: var(--bright-orange-red);
+}
+
+@media (min-width: 1024px) {
+	header > nav.secondary-navigation {
+		padding: 20px 3%;
+	}
+
+	header > nav.secondary-navigation > ul > li {
+		font-size: 16px;
+		line-height: 24px;
+		font-weight: 500;
+	}
+}
+
+/********************************  content ********************************/
+
+/* Hero section */
+section.hero-container {
+	padding: 0 3%;
+}
+
+section.hero-container > .image-container {
+	position: relative;
+}
+
+section.hero-container > .image-container > .hero-title {
+	width: 60%;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+section.hero-container .image-container > img {
+	height: 90dvh;
+	object-fit: cover;
+}
+
+section.hero-container > .text-container {
+	margin: 2rem auto;
+}
+
+section.hero-container > .text-container > h2 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+section.hero-container > .text-container > h2 span {
+	color: var(--pure-blue);
+}
+
+section.hero-container > .text-container p {
+	margin-top: 1.25rem;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+@media (min-width: 1024px) {
+	section.hero-container .image-container {
+		padding: 0 5%;
+	}
+
+	section.hero-container .image-container > img {
+		height: auto;
+	}
+
+	section.hero-container > .text-container {
+		width: 60%;
+		margin: 100px auto;
+	}
+
+	section.hero-container > .text-container > h2 {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	section.hero-container > .text-container p {
+		font-size: 20px;
+		line-height: 28px;
+	}
+}
